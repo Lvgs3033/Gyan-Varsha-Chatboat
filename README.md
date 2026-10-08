@@ -21,7 +21,7 @@ Gemini | LangGraph | FAISS | FastEmbed | Tavily | PostgreSQL | FastAPI | HTML + 
 > that public URL (for example `https://youtu.be/XXXXXXXXXXX`). A relative link like the one above only works
 > inside the repository or the unzipped folder.
 
-Full documentation: [`docs/Gyan_Varsha_Project_Documentation.pdf`](Gyan_Varsha_Project_Documentation.pdf)
+Full documentation: [`chatboatimage.pdf`](chatboatimage.pdf)
 
 ---
 
