@@ -18,22 +18,6 @@ Full documentation: [`chatboatimage.pdf`](chatboatimage.pdf)
 
 ---
 
-## Table of contents
-1. [Features](#features)
-2. [How it works](#how-it-works)
-3. [Technologies and models](#technologies-and-models)
-5. [Project structure](#project-structure)
-6. [Quick start](#quick-start)
-7. [Configuration (.env)](#configuration-env)
-8. [Using the app](#using-the-app)
-9. [Testing Self-RAG](#testing-self-rag)
-10. [API reference](#api-reference)
-11. [Troubleshooting](#troubleshooting)
-12. [Limitations and roadmap](#limitations-and-roadmap)
-13. [Security notes](#security-notes)
-
----
-
 ## Features
 
 - **Self-RAG routing**: for every question the bot decides to answer *directly* (Gemini's own knowledge), *from your files*, or *from the web*.
