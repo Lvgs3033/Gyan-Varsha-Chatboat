@@ -4,7 +4,6 @@
 
 **A Self-RAG chatbot that answers from Gemini's knowledge, your PDF / Excel files, or the live web, and can understand images.**
 
-Gemini | LangGraph | FAISS | FastEmbed | Tavily | PostgreSQL | FastAPI | HTML + CSS + JS
 
 </div>
 
