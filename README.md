@@ -10,11 +10,10 @@
 ---
 
 ## Demo 
-
 ![Watch the demo](thumbnail.png)
 
 
-Full documentation: [`chatboatimage.pdf`](chatboatimage.pdf)
+Full documentation: [`Demo.pdf`](Demo.pdf)
 
 ---
 
