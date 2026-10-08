@@ -2,7 +2,7 @@
 
 # Gyan Varsha
 
-**A Self-RAG chatbot that answers from Gemini's knowledge, your PDF / Excel files, or the live web, and can understand images.**
+**A Self-RAG chatbot that answers parametric knowledge, your PDF / Excel files, or the live web, and can understand images.**
 
 
 </div>
