@@ -12,16 +12,16 @@ Gemini | LangGraph | FAISS | FastEmbed | Tavily | PostgreSQL | FastAPI | HTML + 
 
 ## Demo video
 
-[![Watch the demo](demo/thumbnail.png)](demo/Chatboat.mp4)
+[![Watch the demo](thumbnail.png)](Chatboat.mp4)
 
-**[Watch the demo video (Chatboat.mp4, 18 s)](demo/Chatboat.mp4)**
+**[Watch the demo video (Chatboat.mp4, 18 s)](Chatboat.mp4)**
 
 > **Publishing note:** if you put this project on GitHub, open this README in the GitHub editor and drag
 > `demo/Chatboat.mp4` into it, or upload the video to YouTube / Google Drive and replace the link above with
 > that public URL (for example `https://youtu.be/XXXXXXXXXXX`). A relative link like the one above only works
 > inside the repository or the unzipped folder.
 
-Full documentation: [`docs/Gyan_Varsha_Project_Documentation.pdf`](docs/Gyan_Varsha_Project_Documentation.pdf)
+Full documentation: [`docs/Gyan_Varsha_Project_Documentation.pdf`](Gyan_Varsha_Project_Documentation.pdf)
 
 ---
 
