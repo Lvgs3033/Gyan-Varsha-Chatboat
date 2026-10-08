@@ -9,9 +9,9 @@
 
 ---
 
-## Demo video
+## Demo 
 
-[![Watch the demo](thumbnail.png)]
+![Watch the demo](thumbnail.png)
 
 
 Full documentation: [`chatboatimage.pdf`](chatboatimage.pdf)
