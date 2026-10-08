@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gyan Varsha</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23b8860b' d='M12 2.5c3.2 4 6 7 6 10.4A6 6 0 0 1 6 12.9C6 9.5 8.8 6.5 12 2.5z'/%3E%3C/svg%3E" />
+  <script>
+    (function () {
+      var t = localStorage.getItem("theme");
+      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = t;
+      if (localStorage.getItem("sb") === "0") document.documentElement.classList.add("sb-closed");
+    })();
+  </script>
+  <link rel="stylesheet" href="/static/style.css?v=4" />
+</head>
+<body>
+  <div class="backdrop" id="backdrop"></div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-top">
+        <span class="logo" data-icon="logo"></span>
+        <button class="icon-btn" id="collapseBtn" title="Close sidebar" aria-label="Close sidebar" data-icon="panel"></button>
+      </div>
+      <button class="nav-item" id="newChat"><span data-icon="pen"></span>New chat</button>
+      <label class="nav-item search"><span data-icon="search"></span><input id="search" placeholder="Search chats" autocomplete="off" /></label>
+      <div class="side-label">Chats</div>
+      <ul class="threads" id="threads"></ul>
+      <div class="side-bottom">
+        <button class="nav-item" id="themeBtn"><span id="themeIcon"></span><span id="themeLabel">Night mode</span></button>
+      </div>
+    </aside>
+
+    <main class="main is-empty" id="main">
+      <header class="topbar">
+        <button class="icon-btn open-sb" id="openBtn" title="Open sidebar" aria-label="Open sidebar" data-icon="panel"></button>
+        <div class="model"><span class="logo sm" data-icon="logo"></span>Gyan Varsha</div>
+      </header>
+
+      <section class="scroll" id="scroll"><div class="col" id="messages" aria-live="polite"></div></section>
+
+      <h2 class="hero" id="hero">What can I help with?</h2>
+
+      <footer class="composer-wrap">
+        <div class="composer" id="composer">
+          <div class="tray" id="tray"></div>
+          <div class="row">
+            <div class="plus-wrap">
+              <button class="round-btn" id="plusBtn" title="Add files" aria-label="Add files" data-icon="plus"></button>
+              <div class="menu" id="menu" hidden>
+                <button class="menu-item" id="pickDoc"><span data-icon="file"></span><span>Upload PDF, Excel or CSV</span></button>
+                <button class="menu-item" id="pickImg"><span data-icon="image"></span><span>Upload an image</span></button>
+              </div>
+            </div>
+            <textarea id="input" rows="1" placeholder="Ask anything"></textarea>
+            <button class="send" id="send" aria-label="Send" disabled></button>
+          </div>
+        </div>
+        <div class="chips" id="chips">
+          <button class="sugg" data-q="Summarize the file I uploaded">Summarize a file</button>
+          <button class="sugg" data-q="What is the latest news about AI today?">Latest news</button>
+          <button class="sugg" data-q="Explain how RAG works in simple words">Explain RAG</button>
+        </div>
+        <p class="disclaimer">Gyan Varsha can make mistakes. Check important info.</p>
+      </footer>
+      <input type="file" id="docInput" accept=".pdf,.xlsx,.xlsm,.xls,.csv" multiple hidden />
+      <input type="file" id="imgInput" accept="image/*" hidden />
+    </main>
+  </div>
+
+  <div class="drop" id="drop"><div>Drop files to add them to this chat</div></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+  <script src="/static/app.js?v=4"></script>
+</body>
+</html>

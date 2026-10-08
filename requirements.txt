@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+langchain
+langchain-community
+langchain-google-genai
+langgraph
+langgraph-checkpoint-postgres
+psycopg[pool]
+faiss-cpu
+fastembed
+pypdf
+openpyxl
+xlrd
+tavily-python
